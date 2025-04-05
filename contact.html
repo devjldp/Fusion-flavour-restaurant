@@ -9,7 +9,7 @@
 <body>
     
          <!-- header -->
-        <header id="main-header">
+    <header id="main-header">
             <h1>Flavour Fusion Restaurant</h1>
             <!-- navigation bar  -->
             <nav id="nav-bar">
@@ -20,8 +20,35 @@
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-        </header>
+    </header>
 
+    <!-- Main -->
+     <form action="thanks.html" method="get">
+        <label for="fullName">Full Name:</label>
+        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+        <br>
+        <label for="phoneNumber">Phone number:</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder = "07654 234867" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="youremail@email.com" required>
+        <br>
+        <label for="date">Select the date:</label>
+        <input type="date" name="date" id="date" required>
+        <br>
+        <label for="diners">Number of diners:</label>
+        <select name="" id="diners" required>
+            <option value="">Number of people</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">+4</option>
+        </select>
+        <br>
+        <input type="submit" value="Book table">
+
+
+     </form>
         
     <!-- footer code  -->
     <footer id="main-footer">
