@@ -9,7 +9,18 @@
     --nav-link-hover-colour: #0b460b;
 }
 
+/* spacing, fonts colours */
 
+.text-center{
+    text-align: center;
+}
+.text-jim{
+    font-family: "Jim Nightshade", cursive;
+}
+
+body{
+    margin: 0 auto;
+}
 /* header */
 #main-header{
     width: 100%;
@@ -17,6 +28,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    /* sticky positioning at the top of the viewport */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #ffffff;
 }
 
 #nav-bar{
@@ -67,4 +84,12 @@ ul{
     width: 50px;
     height: 50px;
     margin-right: 50px;
+}
+
+/* index.html */
+#description-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
