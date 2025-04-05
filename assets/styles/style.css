@@ -93,3 +93,64 @@ ul{
     align-items: center;
     justify-content: space-around;
 }
+
+/* gallery */
+
+#gallery-container{
+    width: 90%; /* 90% of its parent element*/
+    display: grid; /* Create a grid layout*/
+    /* Create template for rows nd columns*/
+    grid-template-rows: repeat(3, 30vw); /* Three rows, each row has a height of 30% of wieport width*/
+    grid-template-columns: repeat(3, 30vw); /* three columns each columns has a width of 30% of wieport width */
+/* relative units:
+    widht vieport -> vw
+    height of vieport -> vh */
+    margin: 0 auto; /* you can center a div inside another div */
+    margin-bottom: 5%;
+
+    column-gap: 10px;
+    row-gap: 15px;
+
+
+}
+
+.grid-image{
+    /* properties to contorl how the image is displayed */
+    background-size: cover; /*Scale the image to cover the entire containier */
+    background-position: center; /*Position the image at the cemnter of the container */
+    background-repeat: no-repeat; /* Prevents the image for repeating in horizontal and vertical*/
+}
+#img-1{
+    background-image: url('../images/chocolateFondant.jpg'); /* add an image as background */
+}
+
+#img-2{
+    background-image: url('../images/filletMushrom.jpg');
+}
+#img-3{
+    background-image: url('../images/iceCream.webp');
+}
+
+#img-4{
+    background-image: url('../images/lamb.jpeg');
+}
+
+#img-5{
+    background-image: url('../images/mousse.jpg');
+}
+
+#img-6{
+    background-image: url('../images/onionSoup.jpg');
+}
+
+#img-7{
+    background-image: url('../images//risotto.png');
+}
+
+#img-8{
+    background-image: url('../images/seabass.jpg');
+}
+
+#img-9{
+    background-image: url('../images/tunaTartare.jpg');
+}
