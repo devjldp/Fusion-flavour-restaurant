@@ -1,0 +1,46 @@
+/* import fonts from google font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Jim+Nightshade&display=swap');
+
+/* CSS variables */
+
+:root{
+    --nav-link-primary-color: #030829;
+    --nav-link-hover-colour: #0b460b;
+}
+
+
+/* header */
+#main-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-bar{
+    flex: 0.6;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav-bar li{
+    font-family: 'Italianno', cursive;
+    font-size: 24pt;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--nav-link-primary-color);
+}
+
+.nav-link:hover{
+    color: var(--nav-link-hover-colour);
+}
