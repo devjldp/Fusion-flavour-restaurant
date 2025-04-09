@@ -23,32 +23,61 @@
     </header>
 
     <!-- Main -->
-     <form action="thanks.html" method="get">
-        <label for="fullName">Full Name:</label>
-        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
-        <br>
-        <label for="phoneNumber">Phone number:</label>
-        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder = "07654 234867" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="youremail@email.com" required>
-        <br>
-        <label for="date">Select the date:</label>
-        <input type="date" name="date" id="date" required>
-        <br>
-        <label for="diners">Number of diners:</label>
-        <select name="" id="diners" required>
-            <option value="">Number of people</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">+4</option>
-        </select>
-        <br>
-        <input type="submit" value="Book table">
 
+    <main class="mb-2">
+        <h2 class="text-center">Contact us</h2>
+        <div id="info-contact">
+            <section id="left-side">
+                <form action="thanks.html" method="get">
+                    <div class="form-input">
+                        <label for="fullName">Full Name:</label> <br>
+                        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="phoneNumber">Phone number:</label> <br>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder = "07654 234867" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email:</label> <br>
+                        <input type="email" name="email" id="email" placeholder="youremail@email.com" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="date">Select the date:</label> <br>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="diners">Number of diners:</label>
+                        <select name="" id="diners" required>
+                            <option value="">Number of people</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">+4</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label for="comment">Comment</label> <br>
+                        <textarea name="comment" id="comment" placeholder= "Write your comment here..."></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Book table" >    
+                </form>
+            </section>
 
-     </form>
+            <section id="right-side" class="text-center">
+                <h3>Find Us!</h3>
+                <div>
+                    <p>42 City road</p>
+                    <p>CF24 3BL</p>
+                    <p>Cardiff</p>
+                </div>
+                <!-- copy this code from google maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8355.138856653835!2d-3.1588184680159133!3d51.49491072522919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1704713774822!5m2!1sen!2suk" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
         
     <!-- footer code  -->
     <footer id="main-footer">
