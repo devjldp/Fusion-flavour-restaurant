@@ -14,8 +14,13 @@
 .text-center{
     text-align: center;
 }
+
 .text-jim{
     font-family: "Jim Nightshade", cursive;
+}
+
+.mb-2{
+    margin-bottom: 2vh;
 }
 
 body{
@@ -84,7 +89,7 @@ ul{
     width: 50px;
     height: 50px;
     margin-right: 50px;
-}
+}.HTML
 
 /* index.html */
 #description-container{
@@ -92,6 +97,62 @@ ul{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+
+
+/* menu.html  */
+
+/* Menus Container Styling */
+#menus-container{
+    /* Full-width container with flex display for menu items */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* Adding bottom margin for spacing */
+    margin-bottom: 5%;
+}
+
+/* Styling for Paragraphs and Headings Within Menus Container
+The selector #menus-container p, h3 is a CSS selector that targets both <p> (paragraph) and 
+<h3> (heading level 3) elements within the HTML structure under the element with the ID menus-container */
+#menus-container p, h3{
+    margin: 0;
+}
+
+/* Menu Border Styling */
+.menu-border{
+    /* Fixed width, 30% of the parent container */
+    width: 30%;
+    /* Fixed height, occupying 85% of the viewport height */
+    height: 85vh;
+    /* Border style with color 
+    This is a shorthand property that combines the individual border properties into a single declaration.
+    border-width border-style border-color
+    */
+    border: 1px solid #000000;
+    /* Flex container with column direction for menu content */
+    display: flex;
+    flex-direction: column;
+    /* Aligning content in the center and providing space between items */
+    align-content: center;
+    justify-content: space-around;
+    /* Adding border-radius for rounded corners */
+    border-radius: 20px;
+}
+
+.menu-border ul{
+    /* Removing default list styling and left padding */
+    list-style: none;
+    padding-left: 0px;
+}
+
+.menu-border li{
+    /* Set margins using the shorthand property: margin-top margin-right margin-bottom margin-left */
+    margin: 10% 5% 2% 5%; 
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 /* gallery */
@@ -117,9 +178,10 @@ ul{
 .grid-image{
     /* properties to contorl how the image is displayed */
     background-size: cover; /*Scale the image to cover the entire containier */
-    background-position: center; /*Position the image at the cemnter of the container */
+    background-position: center; /*Position the image at the center of the container */
     background-repeat: no-repeat; /* Prevents the image for repeating in horizontal and vertical*/
 }
+
 #img-1{
     background-image: url('../images/chocolateFondant.jpg'); /* add an image as background */
 }
@@ -127,6 +189,7 @@ ul{
 #img-2{
     background-image: url('../images/filletMushrom.jpg');
 }
+
 #img-3{
     background-image: url('../images/iceCream.webp');
 }
@@ -153,4 +216,55 @@ ul{
 
 #img-9{
     background-image: url('../images/tunaTartare.jpg');
+}
+
+/* contact.html */
+h2{
+    margin: 0
+}
+
+#info-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 15vh;
+}
+
+iframe{
+    width: 100%;
+    height: 100%
+}
+
+.form-input{
+    margin-bottom: 2vh;
+}
+
+input[type="submit"]{
+    margin:0 auto;
+    background-color: #fafafa;
+    color: #0b460b;
+    border: 1px solid #0b460b;
+    border-radius: 20px;
+    padding: 0.1rem 0.5rem;
+}
+
+input[type="submit"]:hover{
+    color: #fafafa;
+    background-color: #0b460b;
+}
+
+#left-side{
+    flex: 0 1 40%;
+}
+
+#right-side{
+    flex: 0 1 40%;
 }
