@@ -23,7 +23,7 @@
     margin-bottom: 2vh;
 }
 
-body {
+/* body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -32,8 +32,8 @@ body {
 
   main {
     flex: 1 0 auto;
-  }
-  
+  } */
+
 /* header */
 #main-header{
     width: 100%;

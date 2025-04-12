@@ -63,6 +63,21 @@ Link to live website
 
 name of your image - website by author
 
+Code: to make a sticky footer I used the code from [matrializecss](https://materializecss.com/footer.html)
+
+```
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+```
+
 ## Code
 
 the website form you copy some code.
