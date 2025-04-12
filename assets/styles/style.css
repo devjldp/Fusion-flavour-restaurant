@@ -269,3 +269,81 @@ input[type="submit"]:hover{
 #right-side{
     flex: 0 1 40%;
 }
+
+
+
+/* media queries */
+
+
+@media screen and ( max-width: 781px){
+    #gallery-container{
+        /* Create template for rows nd columns*/
+        grid-template-rows: repeat(5, 40vw); /* 5 rows, each row has a height of 30% of wieport width*/
+        grid-template-columns: repeat(2, 40vw); /* 2 columns each columns has a width of 30% of wieport width */   
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 481px)
+{
+    /* Gallery */
+
+    #gallery-container{
+        /* Create template for rows nd columns*/
+        grid-template-rows: repeat(9, 60vw); /* 5 rows, each row has a height of 30% of wieport width*/
+        grid-template-columns: repeat(1, 60vw); /* 2 columns each columns has a width of 30% of wieport width */   
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+
+    /* Footer */
+
+    #main-footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #opening-times{
+        text-align: center;
+    }
+    
+    #social img{
+        width: 40px;
+        height: 40px;
+        margin-right: 50px;
+    }
+
+     /* header   */
+    #main-header{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    /* #nav-bar{
+        flex: 0.6;
+    } */
+    
+    /* #nav-bar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+    } */
+    
+    #nav-bar li{
+        font-size: 16pt;
+    }
+
+    /* Contatc */
+
+    #info-contact{   
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
